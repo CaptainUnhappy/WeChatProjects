@@ -1,0 +1,62 @@
+
+<swiper class="sp" indicator-dots indicator-color="#fff" indicator-active-color="#de9057" autoplay interval="3000" circular>
+<swiper-item>
+  <image src="/images/top0.png"></image>
+</swiper-item>
+<swiper-item>
+  <image src="/images/top1.png"></image>
+</swiper-item>
+<swiper-item>
+  <image src="/images/top2.png"></image>
+</swiper-item>
+</swiper>
+
+
+  <view class="sv1">
+
+    <view class="img1">
+      <image show-menu-by-longpress="true" class="img1" src="/images/01.png" >
+      </image>
+      <text class="textcss1">box</text>
+    </view>
+
+    <view>
+      <navigator url="/pages/dishes/dishes">
+        <image class="img1" src="/images/02.png">
+        </image>
+        <text class="textcss1">点餐</text>
+      </navigator>
+    </view>
+
+      <navigator url="/pages/me/me">
+        <view class="sb1">
+          <image class="img1" src="/images/03.png">
+          </image>
+          <text class="textcss1">3333</text>
+        </view>
+      </navigator>
+
+    <view >
+      <image class="img1" src="/images/01.png" >
+      </image>
+      <text class="textcss1">0000</text>
+    </view>
+
+    
+  </view>
+    
+
+    <!-- 分类导航 -->
+  <view class="nav-block wrap">
+    <block wx:for="{{navItems}}"   wx:key="daohang"> 
+      <view class="wrap-item {{item.isSplot ? 'exp' : ''}}">  
+        <navigator url="/pages/demo/{{item.url}}" hover-class="navigator-hover">{{item.name}}</navigator>
+      </view>
+    </block>
+  </view>
+  
+
+
+
+ 
+

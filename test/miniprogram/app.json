@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/dishes/dishes",
+    "pages/demo/demo0",
+    "pages/demo/demo1",
+    "pages/demo/demo2",
+    "pages/demo/demo3",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Test",
+    "navigationBarTextStyle": "black"
+    
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-l.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "开发中",
+        "iconPath": "images/account.png",
+        "selectedIconPath": "images/account-l.png"
+      }
+    ]
+  },
+  "style": "v2"
+}

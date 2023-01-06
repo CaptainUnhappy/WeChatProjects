@@ -1,0 +1,25 @@
+<!--pages/demo/demo3.wxml-->
+
+<view class="viewcenter">
+   <view class="view"> 
+    
+        <view class="userinfo-avatar" style='--width--:{{cssw}}px;--height--:{{cssh}}px;'>
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+         
+    
+  </view>
+
+  <!-- <open-data type="userNickName"></open-data> -->
+  
+  <view style="margin:800rpx 50px 0px 50px">
+    <button type="default" bindtap="randomNumber" bindtap="changeWidthHeight">
+      {{num}}只<open-data type="userNickName"></open-data>
+    </button>
+  </view>
+
+<!-- <view>{{suiji}}</view> -->
+</view>
+ 
+  
+  

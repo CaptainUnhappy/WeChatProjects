@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view>
+  <view class="form-group" wx:for="{{alllist}}" wx:key="index">
+    <!-- <view class="slide" data-index="{{index}}" bindtap="toDetailPagealllist">
+          <image class="checkbox" data-index='{{index}}' src="../../images/list/pending.png" catchtap="finishTodostar" /> -->
+    <view class="todo-info">
+      <view class="todo-info_title">{{item.ran1+' '+item.ran2+' '+item.ran3}}
+      <view class="todo-info_desc">
+        <view wx:if="{{item.ran1>=1&&item.ran1<=6&&item.ran2>=1&&item.ran2<=6&&item.ran3>=1&&item.ran3<=6}}">{{item.ran1+item.ran2+item.ran3}}</view>
+
+        <view wx:if="{{item.ran1+item.ran2+item.ran3>=11&&item.ran1+item.ran2+item.ran3<=18}}">大</view>
+        <view wx:if="{{item.ran1+item.ran2+item.ran3>=3&&item.ran1+item.ran2+item.ran3<=10}}">小</view>
+        <view wx:if="{{item.ran1+item.ran2+item.ran3%2==0}}">双</view>
+        <view wx:if="{{item.ran1+item.ran2+item.ran3%2!==0}}">单</view>
+
+        <view wx:if="{{item.ran1==item.ran2||item.ran1==item.ran3||item.ran2==item.ran3}}">对</view>
+        <view wx:if="{{item.ran1==item.ran2&&item.ran1==item.ran3}}">豹子</view>
+        </view>
+      </view>
+      <!-- <view class="todo-info_desc">{{util.filterStr(item.desc, 20)}}</view> -->
+    </view>
+    <!-- <image wx:if="{{item.star}}" class="star" src="../../images/file/star.png" />
+          <image wx:if="{{item.files.length > 0}}" data-index='{{index}}' class="file" src="../../images/file/file.png"/> -->
+  </view>
+  <!-- {{ran1}} {{ran2}} {{ran3}} -->
+
+  <!-- <view wx:if="{{ran1>=1&&ran1<=6&&ran2>=1&&ran2<=6&&ran3>=1&&ran3<=6}}">{{sum}}</view>
+  <view wx:if="{{sum>=11&&sum<=18}}">大</view>
+  <view wx:if="{{sum>=3&&sum<=10}}">小</view>
+  <view wx:if="{{sum%2==0}}">双</view>
+  <view wx:if="{{sum%2!==0}}">单</view>
+
+  <view wx:if="{{ran1==ran2||ran1==ran3||ran2==ran3}}">对</view>
+  <view wx:if="{{ran1==ran2&&ran1==ran3}}">豹子</view> -->
+</view>

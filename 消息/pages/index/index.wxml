@@ -1,0 +1,14 @@
+<!-- <button bindtap="getopenid">openid</button> -->
+<input placeholder="openid" bindinput="inputValue" value="{{openid}}"></input>
+<!-- oQdL55PBWRTjt5UCw_kNq3jY_sJE 小号-->
+<!-- <button bindtap="shouquan">授权</button> -->
+<button bindtap="getIDandShouquan">一键授权</button>
+<!-- <input type="text" placeholder="写一条自己的动态吧~" name="search" value="" placeholder-class="plac"  bindinput="inputValue" /> -->
+<input placeholder="名称" bindinput="getThing1"></input>
+<input placeholder="说明" bindinput="getThing2"></input>
+<input placeholder="deadline" bindinput="getTime4"></input>
+<button bindtap="sendOne">发送</button>
+<!-- <button bindtap="getdb">getdb</button> -->
+<!-- <button bindtap="SendOne">发送</button> -->
+<!-- <button bindtap="navigate">支付</button> -->
+<!-- <web-view src="https://admin.zhanzhangfu.com/foolpay?code=a677ab" bindload="bindload" binderror="binderror"></web-view> -->

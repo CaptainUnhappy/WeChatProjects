@@ -1,0 +1,28 @@
+<!--index.wxml-->
+
+
+  <!-- <button bindtap="function"> test button </button> -->
+
+  <!-- <view class='countdown'>剩:<text style='color:#6B4EFD'> {{countDownDay}} </text> 天 <text style='color:#6B4EFD'> {{countDownHour}} </text>  时 <text style='color:#6B4EFD'> {{countDownMinute}} </text> 分 <text style='color:#6B4EFD'> {{countDownSecond}} </text> 秒
+  </view> -->
+
+  <!-- 日期选择 -->
+  <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+    <view>
+      选择的日期: {{date}}
+    </view>
+  </picker>
+
+  <!-- 时间选择 -->
+  <picker mode="time" value="{{time}}" bindchange="bindTimeChange">
+    <view class="picker">
+      选择的时间: {{time}}
+    </view>
+  </picker>
+
+  <button bindtap="deadlinechange">确定</button>
+
+
+  <text style="display: block;text-align: center;font-size: 30px;color: #f60;margin-top: 50px;">
+    {{clock}} {{micro_second}}
+  </text>
